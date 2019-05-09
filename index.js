@@ -18,7 +18,9 @@ class App extends Component {
         <Hello name={this.state.name} />
         <p>
           Styled Components
-          <Button>Styled Button</Button>
+          <Button theme='yellow'>Yellow Button</Button>
+          <Button theme='red'>red Button</Button>
+          <Button>default Button</Button>
         </p>
       </div>
     );
