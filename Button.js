@@ -6,6 +6,11 @@ height: 35px;
 background-color: pink;
 color:black;
 font-weight: bold;
-display: block
+display: block;
+box-sizing: border-box;
+border-color: green;
+border-style: solid;
+border-width: 1px;
+cursor: pointer;
 `
 export default Button;
