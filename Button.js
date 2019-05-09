@@ -12,5 +12,6 @@ border-color: green;
 border-style: solid;
 border-width: 1px;
 cursor: pointer;
+margin: 10px
 `
 export default Button;
