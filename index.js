@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
 import Button from './Button';
+import ExtendedButton from './ButtonExtend';
 import './style.css';
 
 class App extends Component {
@@ -17,10 +18,14 @@ class App extends Component {
       <div>
         <Hello name={this.state.name} />
         <p>
-          Styled Components
+         Get into  Styled Components
           <Button backgroundColor="yellow" textColor="green">Yellow Button</Button>
           <Button backgroundColor="red" textColor="white">red Button</Button>
           <Button>default Button</Button>
+        </p>
+        <p>
+          Extending Component Styles
+         <ExtendedButton>Extended Button</ExtendedButton>
         </p>
       </div>
     );
