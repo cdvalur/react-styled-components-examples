@@ -14,5 +14,6 @@ border-style: solid;
 border-width: 1px;
 margin: 10px;
 text-align: center;
+text-decoration: ${({theme}) => theme.textDecoration}
 `
 export default Button;

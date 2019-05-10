@@ -31,7 +31,7 @@ class App extends Component {
         </p>
         <p>
           Using "as" polymorphic prop
-         <Button as="a" href="/" style={{textDecoration: "none"}}>Button as a Link</Button>
+         <Button as="a" href="/" theme={{textDecoration: "none"}}>Button as a Link</Button>
          Custom Rendered Component
          <Button as={ReversedButton}  style={{textDecoration: "none"}}>Reversed Button</Button>
         </p>
