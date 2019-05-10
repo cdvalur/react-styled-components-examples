@@ -4,7 +4,7 @@ const Button = styled.button`
 width: 200px;
 height: 35px;
 background-color: ${props => props.backgroundColor ? props.backgroundColor : 'pink'};
-color:black;
+color:${props => props.textColor ? props.textColor : 'black'};
 font-weight: bold;
 display: block;
 box-sizing: border-box;
