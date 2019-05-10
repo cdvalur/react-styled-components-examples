@@ -4,6 +4,7 @@ import Hello from './Hello';
 import Button from './Button';
 import ExtendedButton from './ButtonExtend';
 import ReversedButton from './ReversedButton';
+import {Link, StyledLink} from './StyledLink'
 import './style.css';
 
 class App extends Component {
@@ -33,6 +34,14 @@ class App extends Component {
          <Button as="a" href="/" style={{textDecoration: "none"}}>Button as a Link</Button>
          Custom Rendered Component
          <Button as={ReversedButton}  style={{textDecoration: "none"}}>Reversed Button</Button>
+        </p>
+        <p>
+          Styling any components <br/>
+        <div>
+        <Link>Unstyled, boring Link</Link>
+        <br />
+        <StyledLink>Styled, exciting Link</StyledLink>
+        </div>
         </p>
       </div>
     );
