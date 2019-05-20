@@ -11,10 +11,10 @@ const AccordionWrapperStyled = styled.div`
 `;
 const AccordionTitle = styled.div`
     padding:10px;
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: bold;
-    display: inline-block;
     color: white
+    cursor: pointer
 `;
 
 const AccordionIcon = styled.div`
@@ -22,7 +22,7 @@ const AccordionIcon = styled.div`
     position: relative;
     width: 15px;
     height: 15px;
-    top: 15px;
+    top: 4px;
     &:before,
     &:after{
         content: "";
@@ -55,9 +55,6 @@ const AccordionIcon = styled.div`
         &:after{ transform: rotate(180deg); }
     }
 `;
-const AccordionSectionStyled = styled.div`
-    cursor: pointer;
-`;
 const AccordionPanelStyled = styled.div`
    display: block;
 `;
@@ -66,7 +63,6 @@ const AccordionPanelStyled = styled.div`
 export {
   AccordionContainer,
   AccordionWrapperStyled,
-  AccordionSectionStyled,
   AccordionPanelStyled,
   AccordionTitle,
   AccordionIcon

@@ -50,10 +50,10 @@ class App extends Component {
         </p>
           <AccordionWrapper>
             <div title="Button">
-          <Button/>
+          <Button backgroundColor="yellow" textColor="green">Yellow Button</Button>
         </div>
         <div title="Extended Button">
-          <ExtendedButton/>
+         <ExtendedButton>Extended Button</ExtendedButton>
         </div>
           </AccordionWrapper>
          <p>
