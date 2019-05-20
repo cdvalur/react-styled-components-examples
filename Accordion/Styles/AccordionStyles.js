@@ -20,9 +20,9 @@ const AccordionTitle = styled.div`
 const AccordionIcon = styled.div`
     float: right;
     position: relative;
-    width: 30px;
-    height: 30px;
-    top: 10px;
+    width: 15px;
+    height: 15px;
+    top: 15px;
     &:before,
     &:after{
         content: "";
@@ -35,7 +35,7 @@ const AccordionIcon = styled.div`
     &:before{
         top: 0;
         left: 50%;
-        width: 4px;
+        width: 3px;
         height: 100%;
         margin-left: -2px;
     }
@@ -45,8 +45,8 @@ const AccordionIcon = styled.div`
         top: 50%;
         left: 0;
         width: 100%;
-        height: 4px;
-        margin-top: -2px;
+        height: 3px;
+        margin-top: -1px;
     }
      &:hover{
         cursor: pointer;
