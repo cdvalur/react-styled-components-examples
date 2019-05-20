@@ -5,6 +5,7 @@ import Button from './Button';
 import ExtendedButton from './ButtonExtend';
 import ReversedButton from './ReversedButton';
 import {Link, StyledLink} from './StyledLink'
+import AccordionWrapper from './Accordion/AccordionWrapper';
 import './style.css';
 
 class App extends Component {
@@ -42,6 +43,21 @@ class App extends Component {
         <br />
         <StyledLink>Styled, exciting Link</StyledLink>
         </div>
+
+
+
+
+        </p>
+          <AccordionWrapper>
+            <div title="Button">
+          <Button/>
+        </div>
+        <div title="Extended Button">
+          <ExtendedButton/>
+        </div>
+          </AccordionWrapper>
+         <p>
+         
         </p>
       </div>
     );
