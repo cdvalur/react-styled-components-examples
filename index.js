@@ -47,9 +47,31 @@ class App extends Component {
       </p>
   </div>
   <div>
-      <h2>Accordions</h2>
+      <h2>Accordions Multi Open</h2>
+        <AccordionWrapper allowMultipleOpen>
+            <Accordion title="Button">
+                <Button backgroundColor="yellow" textColor="green">Yellow Button</Button>
+            </Accordion>
+            <Accordion title="Extended Button">
+                  <ExtendedButton>Extended Button</ExtendedButton>
+            </Accordion>
+        </AccordionWrapper>
+    </div>
+    <div>
+      <h2>Accordions Collapsable</h2>
         <AccordionWrapper>
             <Accordion title="Button">
+                <Button backgroundColor="yellow" textColor="green">Yellow Button</Button>
+            </Accordion>
+            <Accordion title="Extended Button">
+                  <ExtendedButton>Extended Button</ExtendedButton>
+            </Accordion>
+        </AccordionWrapper>
+    </div>
+    <div>
+      <h2>Accordions Default Open</h2>
+        <AccordionWrapper>
+            <Accordion title="Button" isOpen>
                 <Button backgroundColor="yellow" textColor="green">Yellow Button</Button>
             </Accordion>
             <Accordion title="Extended Button">
