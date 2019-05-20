@@ -1,10 +1,8 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 
 const AccordionContainer = styled.div`
     display: block;
-    border: 1px solid #FFF;
-    padding: 5px 10px;
-    background: #036196;
+    padding: 1px 10px;
 `;
 const AccordionWrapperStyled = styled.div`
     display: block;
@@ -15,6 +13,7 @@ const AccordionTitle = styled.div`
     font-weight: bold;
     color: white
     cursor: pointer
+    background: #036196;
 `;
 
 const AccordionIcon = styled.div`
@@ -38,6 +37,7 @@ const AccordionIcon = styled.div`
         width: 3px;
         height: 100%;
         margin-left: -2px;
+        transform:${(props) => props.isOpen ? "rotate(90deg);": "none"}
     }
 
     /* horizontal line */
@@ -47,16 +47,20 @@ const AccordionIcon = styled.div`
         width: 100%;
         height: 3px;
         margin-top: -1px;
+        transform:${(props) => props.isOpen ? "rotate(180deg);": "none"}
     }
-     &:hover{
-        cursor: pointer;
-        
-        &:before{ transform: rotate(90deg); }
-        &:after{ transform: rotate(180deg); }
-    }
+
 `;
 const AccordionPanelStyled = styled.div`
    display: block;
+   background: white;
+   max-height: 0px;
+   overflow: hidden;
+   visibility: ${(props) => props.isOpen ? "visible": "hidden"}
+   transition: max-height 0.35s ease-in-out,visibility 0.4s ease-out;
+  ${ props => props.isOpen && css`
+    max-height: 500px;
+  `};
 `;
 
 

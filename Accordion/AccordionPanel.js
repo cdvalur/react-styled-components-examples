@@ -10,11 +10,11 @@ const onClick = () => {
 return(<Fragment>
 <AccordionContainer>
     <AccordionTitle onClick={onClick}>{props.title}
-    <AccordionIcon></AccordionIcon>
+    <AccordionIcon isOpen={props.isOpen}></AccordionIcon>
     </AccordionTitle>
-    {props.isOpen && (<AccordionPanelStyled>
+    {<AccordionPanelStyled isOpen={props.isOpen}>
     {props.children}
-    </AccordionPanelStyled>)}
+    </AccordionPanelStyled>}
 </AccordionContainer>
 </Fragment>)
 }
