@@ -27,7 +27,7 @@ const AccordionIcon = styled.div`
         content: "";
         position: absolute;
         background-color: white;
-        transition: transform 0.25s ease-out;
+        transition: transform 0.35s ease-out;
     }
 
     /* Vertical line */
@@ -51,13 +51,13 @@ const AccordionIcon = styled.div`
     }
 
 `;
-const AccordionPanelStyled = styled.div`
+const AccordionBody = styled.div`
    display: block;
    background: white;
    max-height: 0px;
    overflow: hidden;
    visibility: ${(props) => props.isOpen ? "visible": "hidden"}
-   transition: max-height 0.35s ease-in-out,visibility 0.4s ease-out;
+   transition: max-height 0.35s ease-in-out,visibility 0.35s ease-out;
   ${ props => props.isOpen && css`
     max-height: 500px;
   `};
@@ -67,7 +67,7 @@ const AccordionPanelStyled = styled.div`
 export {
   AccordionContainer,
   AccordionWrapperStyled,
-  AccordionPanelStyled,
+  AccordionBody,
   AccordionTitle,
   AccordionIcon
 }

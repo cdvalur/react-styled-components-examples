@@ -5,7 +5,7 @@ import Button from './Button';
 import ExtendedButton from './ButtonExtend';
 import ReversedButton from './ReversedButton';
 import {Link, StyledLink} from './StyledLink'
-import AccordionWrapper from './Accordion/AccordionWrapper';
+import {AccordionWrapper, Accordion } from './Accordion';
 import './style.css';
 
 class App extends Component {
@@ -20,6 +20,7 @@ class App extends Component {
     return (
       <div>
         <Hello name={this.state.name} />
+        <div style={{display: "flex"}}>
         <p>
          Get into  Styled Components
           <Button backgroundColor="yellow" textColor="green">Yellow Button</Button>
@@ -43,22 +44,19 @@ class App extends Component {
         <br />
         <StyledLink>Styled, exciting Link</StyledLink>
         </div>
-
-
-
-
-        </p>
-          <AccordionWrapper>
-            <div title="Button">
-          <Button backgroundColor="yellow" textColor="green">Yellow Button</Button>
-        </div>
-        <div title="Extended Button">
-         <ExtendedButton>Extended Button</ExtendedButton>
-        </div>
-          </AccordionWrapper>
-         <p>
-         
-        </p>
+      </p>
+  </div>
+  <div>
+      <h2>Accordions</h2>
+        <AccordionWrapper>
+            <Accordion title="Button">
+                <Button backgroundColor="yellow" textColor="green">Yellow Button</Button>
+            </Accordion>
+            <Accordion title="Extended Button">
+                  <ExtendedButton>Extended Button</ExtendedButton>
+            </Accordion>
+        </AccordionWrapper>
+    </div>
       </div>
     );
   }

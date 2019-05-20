@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, {useState } from "react";
 import { AccordionWrapperStyled } from './Styles/AccordionStyles';
 import AccordionPanel from './AccordionPanel';
 const AccordionWrapper = (props) => {
@@ -11,11 +11,9 @@ const onClick = title => {
     setOpenScetions({
           [title]: !isOpen
         });
-
-      console.log(openSections);
   };
 
-  return(<Fragment>
+  return(
   <AccordionWrapperStyled>
     {children.map(child => (
           <AccordionPanel
@@ -26,8 +24,7 @@ const onClick = title => {
             {child.props.children}
           </AccordionPanel>
         ))}
-  </AccordionWrapperStyled>
-  </Fragment>);
+  </AccordionWrapperStyled>);
 };
 
 export default AccordionWrapper;
