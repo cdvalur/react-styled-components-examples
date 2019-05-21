@@ -20,6 +20,7 @@ const init = () => {
   })();
     
   }, {});
+  
 const onClick = title => {
     const isOpen = !!openSections[title];
     if (allowMultipleOpen) {
