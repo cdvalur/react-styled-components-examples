@@ -11,9 +11,9 @@ const AccordionTitle = styled.div`
     padding:10px;
     font-size: 1rem;
     font-weight: bold;
-    color: white
+    color: ${(props)=> props.theme.textColor};
     cursor: pointer
-    background: #036196;
+    background: ${(props)=> props.theme.backgroundColor};
 `;
 
 const AccordionIcon = styled.div`
@@ -26,7 +26,7 @@ const AccordionIcon = styled.div`
     &:after{
         content: "";
         position: absolute;
-        background-color: white;
+        background-color: ${(props)=> props.theme.textColor};
         transition: transform 0.35s ease-out;
     }
 

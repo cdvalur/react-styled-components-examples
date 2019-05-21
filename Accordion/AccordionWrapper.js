@@ -1,6 +1,7 @@
 import React, {useState, useEffect } from "react";
 import { AccordionWrapperStyled } from './Styles/AccordionStyles';
 import AccordionPanel from './AccordionPanel';
+import { ThemeProvider } from 'styled-components';
 const AccordionWrapper = (props) => {
 const { children, allowMultipleOpen } = props;  
 const[ openSections, setOpenScetions] = useState({});
@@ -37,17 +38,24 @@ const onClick = title => {
 };
 
   return(
-  <AccordionWrapperStyled>
-    {children.map(child => (
-          <AccordionPanel
-            isOpen={!!openSections[child.props.title]}
-            title={child.props.title}
-            onClick={onClick}
-          >
-            {child.props.children}
-          </AccordionPanel>
-        ))}
-  </AccordionWrapperStyled>);
+    <ThemeProvider theme={props.theme}>
+      <AccordionWrapperStyled>
+        {children.map(child => (
+              <AccordionPanel
+                isOpen={!!openSections[child.props.title]}
+                title={child.props.title}
+                onClick={onClick}
+              >
+                {child.props.children}
+              </AccordionPanel>
+            ))}
+      </AccordionWrapperStyled>
+  </ThemeProvider>);
 };
-
+AccordionWrapper.defaultProps = {
+  theme: {
+    backgroundColor: "#036196",
+    textColor: "white",
+  }
+}
 export default AccordionWrapper;
