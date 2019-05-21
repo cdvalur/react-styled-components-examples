@@ -1,5 +1,5 @@
 import React from "react";
-import {AccordionContainer, AccordionBody, AccordionTitle, AccordionIcon} from './Styles/AccordionStyles';
+import {AccordionContainer, AccordionBody, AccordionTitle, AccordionIcon} from './styles';
 
 const AccordionPanel = (props) => {
 

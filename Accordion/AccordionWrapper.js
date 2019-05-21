@@ -1,5 +1,5 @@
 import React, {useState, useEffect } from "react";
-import { AccordionWrapperStyled } from './Styles/AccordionStyles';
+import { AccordionWrapperStyled } from './styles';
 import AccordionPanel from './AccordionPanel';
 import { ThemeProvider } from 'styled-components';
 const AccordionWrapper = (props) => {
