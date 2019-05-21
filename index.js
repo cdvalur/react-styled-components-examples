@@ -48,7 +48,7 @@ class App extends Component {
   </div>
   <div>
       <h2>Accordions Multi Open</h2>
-        <AccordionWrapper allowMultipleOpen theme={{backgroundColor: "yellow",textColor: "black"}}>
+        <AccordionWrapper allowMultipleOpen theme={{backgroundColor: "green",textColor: "black"}}>
             <Accordion title="Button">
                 <Button backgroundColor="yellow" textColor="green">Yellow Button</Button>
             </Accordion>
@@ -59,7 +59,7 @@ class App extends Component {
     </div>
     <div>
       <h2>Accordions Collapsable</h2>
-        <AccordionWrapper>
+        <AccordionWrapper theme={{backgroundColor: "lavender",textColor: "blue"}}>
             <Accordion title="Button">
                 <Button backgroundColor="yellow" textColor="green">Yellow Button</Button>
             </Accordion>
