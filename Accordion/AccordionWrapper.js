@@ -19,8 +19,8 @@ const init = () => {
     setOpenScetions(result);
   })();
     
-  }, {});
-  
+  }, []);
+
 const onClick = title => {
     const isOpen = !!openSections[title];
     if (allowMultipleOpen) {
