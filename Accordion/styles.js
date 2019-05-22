@@ -46,7 +46,7 @@ const AccordionIcon = styled.div`
         left: 0;
         width: 100%;
         height: 3px;
-        margin-top: -1px;
+        margin-top: -2px;
         transform:${(props) => props.isOpen ? "rotate(180deg);": "none"}
     }
 
